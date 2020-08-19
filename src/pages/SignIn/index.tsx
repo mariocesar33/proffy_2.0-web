@@ -27,15 +27,13 @@ const SignIn: React.FC = () => (
       </form>
 
       <div className="logon">
-        <p>
-          Não tem conta?
-          
-        </p>
         <span>
-            É de graça <img src={purpleHeartIcon} alt="Coração roxo" />
-          </span>
+          <p>Não tem conta?</p> <a href="forgot">Cadastre-se</a>
+        </span>
+        <span className="roxo" >
+          É de graça <img src={purpleHeartIcon} alt="Coração roxo" />
+        </span>
       </div>
-      <a href="forgot">Cadastre-se</a>
     </Content>
   </Container>
 );

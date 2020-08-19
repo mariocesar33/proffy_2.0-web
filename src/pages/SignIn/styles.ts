@@ -91,9 +91,22 @@ export const Content = styled.div`
   }
 
   .logon {
+    margin: 0;
+    width: 340px;
+    font-size: 16px;
     margin-top: 80px;
     align-items: center;
     display: flex;
+  }
+
+  .logon span a {
+    color: #8257E5;
+  } 
+
+  .roxo {
+    font-size: 12px;
+    color: #9C98A6;
+    margin-left: 100px
   }
 `;
 
