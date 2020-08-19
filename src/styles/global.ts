@@ -37,14 +37,7 @@ export default createGlobalStyle`
 
   body {
     background: var(--color-background);
-    -webkit-font-smoothing: anialiased;
   }
-
-  /* #root {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 
   body,
   input,

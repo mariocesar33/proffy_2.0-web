@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { shade } from 'polished';
 
 import signInBackgroundImg from '../../assets/sign-in-background.png';
 
@@ -20,11 +21,11 @@ export const Content = styled.div`
   max-width: 900px;
 
   form {
-    margin: 80px 0;
     width: 340px;
     text-align: center;
 
     h1 {
+      text-align: left;
       margin-bottom: 40px;
     }
 
@@ -57,11 +58,6 @@ export const Content = styled.div`
       margin-left: 5px;
       width: 20px;
       height: 20px;
-      margin-left: 0;
-      background: #FAFAFC;
-      border: 1px solid #E6E6F0;
-      box-sizing: border-box;
-      border-radius: 5px;
     }
 
     .painel-contaier label {
@@ -72,10 +68,13 @@ export const Content = styled.div`
     .painel-contaier a {
       margin-left: 60px;
       font-size: 14px;
-      line-height: 24px;
-      text-align: right;
       color: #9C98A6;
       text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: ${shade(0.2, '#9C98A6')};
+      }
     }
 
     button {
@@ -85,28 +84,35 @@ export const Content = styled.div`
       padding: 16px;
       color: #9C98A6;
       width: 100%;
-      font-weight: 500;
       margin-top: 30px;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background: ${shade(0.2, '#DCDCE6')};
+      }
     }
   }
 
   .logon {
-    margin: 0;
     width: 340px;
     font-size: 16px;
-    margin-top: 80px;
-    align-items: center;
+    margin-top: 100px;
     display: flex;
   }
 
   .logon span a {
     color: #8257E5;
+    transition: color 0.2s;
+
+    &:hover {
+      color: ${shade(0.2, '#8257E5')}
+    }
   } 
 
   .roxo {
     font-size: 12px;
     color: #9C98A6;
-    margin-left: 100px
+    margin-left: 120px
   }
 `;
 
